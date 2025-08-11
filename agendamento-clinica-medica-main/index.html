@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento de Consulta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de Consulta</h1>
+
+    <form id="agendamento-form">
+      <label for="data">Data da Consulta:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="horario">Horário:</label>
+      <select id="horario" name="horario" required>
+        <option value="">Selecione a data primeiro</option>
+      </select>
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required minlength="3" pattern="[A-Za-zÀ-ÿ\s]+" title="Digite seu nome completo (apenas letras)">
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+
+    <div id="resumo" class="resumo" style="display:none;"></div>
+    <button id="novo-agendamento" style="display:none; margin-top: 20px;">Novo Agendamento</button>
+  </div>
+
+  <!-- Modal de Confirmação -->
+  <div id="modal-confirmacao" class="modal">
+    <div class="modal-content">
+      <h3>Confirmar Agendamento</h3>
+      <div id="dados-confirmacao"></div>
+      <div class="botoes-confirmacao">
+        <button id="btn-confirmar" class="btn-confirmar">Confirmar</button>
+        <button id="btn-cancelar" class="btn-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

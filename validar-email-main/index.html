@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de E-mail</title>
+    <!-- Adicionando SweetAlert2 via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal@5/minimal.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #e1e1e1;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+        }
+
+        button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #3a7bc8;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 8px;
+            text-align: left;
+            display: none;
+        }
+
+        /* Ajuste para impedir que o conteúdo se mova quando o modal aparecer */
+        .swal2-container {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        /* Garantindo que o corpo da página não seja deslocado */
+        body.swal2-shown {
+            padding-right: 0 !important;
+        }
+
+        body.swal2-height-auto {
+            height: 100vh !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Validação de E-mail</h2>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+            <p id="mensagemErro" class="error">Por favor, insira um e-mail válido.</p>
+        </div>
+        <button onclick="validarEmail()">Verificar E-mail</button>
+    </div>
+
+    <script>
+        function validarEmail() {
+            const emailInput = document.getElementById("email");
+            const mensagemErro = document.getElementById("mensagemErro");
+            const email = emailInput.value.trim();
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            // Configuração base do SweetAlert2 para evitar deslocamento
+            const sweetAlertConfig = {
+                heightAuto: false,
+                allowOutsideClick: true,
+                scrollbarPadding: false,
+                confirmButtonColor: '#4a90e2'
+            };
+
+            if (!email) {
+                // Campo vazio
+                Swal.fire({
+                    ...sweetAlertConfig,
+                    title: 'Campo vazio!',
+                    text: 'Por favor, insira um endereço de e-mail.',
+                    icon: 'warning'
+                });
+                emailInput.style.borderColor = "#e74c3c";
+                mensagemErro.style.display = "block";
+                return;
+            }
+
+            if (!regexEmail.test(email)) {
+                // E-mail inválido
+                Swal.fire({
+                    ...sweetAlertConfig,
+                    title: 'E-mail inválido!',
+                    text: 'O formato do e-mail inserido não é válido.',
+                    icon: 'error'
+                });
+                emailInput.style.borderColor = "#e74c3c";
+                mensagemErro.style.display = "block";
+            } else {
+                // E-mail válido
+                Swal.fire({
+                    ...sweetAlertConfig,
+                    title: 'Sucesso!',
+                    text: 'E-mail validado com sucesso!',
+                    icon: 'success'
+                });
+                emailInput.style.borderColor = "#2ecc71";
+                mensagemErro.style.display = "none";
+            }
+        }
+
+        // Validação em tempo real
+        document.getElementById('email').addEventListener('input', function () {
+            const emailInput = this;
+            const mensagemErro = document.getElementById("mensagemErro");
+            const email = emailInput.value.trim();
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (email && regexEmail.test(email)) {
+                emailInput.style.borderColor = "#2ecc71";
+                mensagemErro.style.display = "none";
+            } else if (email) {
+                emailInput.style.borderColor = "#e74c3c";
+                mensagemErro.style.display = "block";
+            } else {
+                emailInput.style.borderColor = "#e1e1e1";
+                mensagemErro.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- Script adicional para garantir comportamento correto do SweetAlert2 -->
+    <script>
+        // Configuração global do SweetAlert2
+        window.addEventListener('DOMContentLoaded', () => {
+            Swal.mixin({
+                heightAuto: false,
+                scrollbarPadding: false
+            });
+        });
+    </script>
+
+</body>
+
+</html>
