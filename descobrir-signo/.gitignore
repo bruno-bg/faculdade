@@ -1,0 +1,74 @@
+# Arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de configuração do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de log
+*.log
+logs/
+error_log
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Arquivos de cache
+cache/
+*.cache
+
+# Arquivos de configuração com informações sensíveis
+.env
+config.php
+database.php
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+
+# Arquivos de dependências (se usar Composer)
+vendor/
+composer.lock
+
+# Arquivos de build/compilação
+dist/
+build/
+*.min.js
+*.min.css
+
+# Arquivos de teste
+tests/
+test/
+phpunit.xml
+
+# Arquivos de documentação gerados
+docs/
+documentation/
+
+# Arquivos de configuração do servidor
+.htaccess.backup
+httpd.conf
+
+# Arquivos de sessão PHP
+sessions/
+*.sess
+
+# Arquivos de upload temporários
+uploads/temp/
+uploads/cache/
+
+# Arquivos de configuração específicos do XAMPP (se aplicável)
+xampp/
+apache/
+mysql/
+
+# Arquivos de configuração do Cursor
+.cursor/
