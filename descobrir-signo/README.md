@@ -1,6 +1,13 @@
-# 🌟 Descobrir Signo
+# Descobrir Signo 
+♈♉♊♋♌♍♎♏♐♑♒♓
 
 Sistema web para consulta de signos zodiacais baseado na data de nascimento.
+
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <img src="./assets/img/screenshot1.png" alt="Preview do Sistema" width="49%">
+  <img src="./assets/img/screenshot2.png" alt="Preview do Sistema" width="49%">
+</div>
+
 
 ## 🚀 Funcionalidades
 
@@ -30,7 +37,6 @@ Sistema web para consulta de signos zodiacais baseado na data de nascimento.
 ```
 descobrir-signo/
 ├── assets/          # CSS, JS e imagens
-├── docs/            # Documentação completa
 ├── layouts/         # Componentes compartilhados
 ├── index.php        # Página principal
 ├── show_zodiac_sign.php  # Página de resultado
@@ -43,9 +49,6 @@ descobrir-signo/
 2. Coloque na pasta do seu servidor web
 3. Acesse via navegador
 
-## 📚 Documentação
-
-Para informações detalhadas sobre o projeto, consulte a [documentação completa](docs/README.md).
 
 ## 🌟 Características
 
@@ -56,15 +59,16 @@ Para informações detalhadas sobre o projeto, consulte a [documentação comple
 - **Responsividade** completa
 - **Animações** suaves e modernas
 
-## 🎯 Casos de Uso
-
-- Consulta pessoal de signo
-- Aplicações educacionais
-- Integração com outros sistemas
-- Base para aplicações astrológicas
-
 ---
 
-**Desenvolvido com ❤️ para o projeto de Desenvolvimento Web**
+## Licença
 
-📖 [Ver documentação completa](docs/README.md)
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Autor
+Bruno Guimarães - [GitHub](https://github.com/bruno-bg)
+
+
+## Atividade Acadêmica
+
+Este projeto foi desenvolvido como parte da disciplina de Programação Web do curso de Desenvolvimento Web da Anhanguera.

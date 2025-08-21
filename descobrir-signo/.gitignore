@@ -5,6 +5,7 @@ desktop.ini
 
 # Arquivos de configuração do editor
 .vscode/
+.cursor/
 .idea/
 *.swp
 *.swo
@@ -70,5 +71,5 @@ xampp/
 apache/
 mysql/
 
-# Arquivos de configuração do Cursor
-.cursor/
+# Outros
+3 - Programação Web.pdf
