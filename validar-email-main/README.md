@@ -60,13 +60,21 @@ Foi implementada uma correção específica para evitar o deslocamento da págin
 - Parâmetros personalizados como `heightAuto: false` e `scrollbarPadding: false`
 - Estilos CSS para garantir que o corpo da página mantenha sua posição
 
-## 📝 Notas de Desenvolvimento
-
-O projeto foi desenvolvido como parte do portfólio da disciplina "Desenvolvimento em Javascript" do 3º Semestre do curso de Desenvolvimento Web da Anhanguera.
-
 ## 🔍 Melhorias Futuras
 
 - Implementar validação de força de senha
 - Adicionar integração com APIs de verificação de e-mail
 - Incluir modo escuro
 - Expandir para um formulário de cadastro completo
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Autor
+Bruno Guimarães - [GitHub](https://github.com/bruno-bg)
+
+
+## Atividade Acadêmica
+
+Este projeto foi desenvolvido como parte da disciplina de Projeto Integrado Síntese - Ads do curso de Desenvolvimento Web da Anhanguera.

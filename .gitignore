@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.cursor/
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.pdf
+
+# Adicionados
+# chat/
+# instrucoes.txt
+
+# Wordpress
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/.htaccess
+/wp-content/uploads/
+/wp-content/upgrade/ 
+/wp-*.php   
+*.pdf
+
+# Projetos específicos
+
+# Woocommerce Faculdade
+woocommerce/wp-admin/
+woocommerce/wp-content/index.php
+woocommerce/wp-content/languages
+woocommerce/wp-content/plugins/index.php
+woocommerce/wp-content/themes/index.php
+woocommerce/wp-includes/
+woocommerce/index.php
+woocommerce/license.txt
+woocommerce/readme.html
+woocommerce/.htaccess
+woocommerce/wp-content/uploads/
+woocommerce/wp-content/upgrade/
+woocommerce/wp-*.php
+woocommerce/*.pdf

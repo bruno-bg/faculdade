@@ -49,6 +49,14 @@ O layout se adapta automaticamente com base nos seguintes breakpoints:
 
 Imagens fornecidas por [Unsplash](https://unsplash.com)
 
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Autor
+Bruno Guimarães - [GitHub](https://github.com/bruno-bg)
+
+
 ## Atividade Acadêmica
 
-Este projeto foi desenvolvido como parte da disciplina de Desenvolvimento Responsivo do curso de Desenvolvimento Web da Anhanguera.
+Este projeto foi desenvolvido como parte da disciplina de Projeto Integrado Síntese - Ads do curso de Desenvolvimento Web da Anhanguera.
