@@ -1,4 +1,6 @@
-# Logs
+# =====================
+# Logs e arquivos temporários
+# =====================
 logs
 *.log
 npm-debug.log*
@@ -6,48 +8,65 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+**/*.tmp
+**/*.bak
+**/*~
 
+# =====================
+# Node.js
+# =====================
 node_modules
 dist
 dist-ssr
+build
 *.local
+.env
+.env.*
 
-# Editor directories and files
+# =====================
+# WordPress (aplicável a qualquer subpasta)
+# =====================
+**/wp-admin/
+**/wp-content/index.php
+**/wp-content/languages
+**/wp-content/plugins/index.php
+**/wp-content/themes/index.php
+**/wp-includes/
+**/index.php
+**/license.txt
+**/readme.html
+**/.htaccess
+**/wp-content/uploads/
+**/wp-content/upgrade/
+**/wp-*.php
+**/*.pdf
+
+# =====================
+# Editores e IDEs
+# =====================
 .vscode/*
 !.vscode/extensions.json
 .cursor/
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-*.pdf
 
-# Adicionados
-# chat/
-# instrucoes.txt
+# =====================
+# Outras ferramentas
+# =====================
+coverage/
+.turbo/
+lerna-debug.log*
+*.tgz
+*.zip
 
-# Wordpress
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/.htaccess
-/wp-content/uploads/
-/wp-content/upgrade/ 
-/wp-*.php   
-*.pdf
-
-# Projetos específicos
-
-# Woocommerce Faculdade
+# =====================
+# Específicos do projeto Woocommerce
+# (mantido por clareza, mas já coberto pelos padrões acima)
 woocommerce/wp-admin/
 woocommerce/wp-content/index.php
 woocommerce/wp-content/languages
@@ -62,3 +81,9 @@ woocommerce/wp-content/uploads/
 woocommerce/wp-content/upgrade/
 woocommerce/wp-*.php
 woocommerce/*.pdf
+
+# =====================
+# Outros arquivos ignorados
+# =====================
+chat/
+instrucoes.txt
