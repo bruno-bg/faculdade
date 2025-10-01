@@ -87,3 +87,4 @@ woocommerce/*.pdf
 # =====================
 chat/
 instrucoes.txt
+PDF/*.pdf
