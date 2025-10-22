@@ -136,7 +136,7 @@ $password = '';
 
 ### **4. Acesso ao Sistema**
 ```
-URL: http://localhost/Anhanguera/desenvolvimento-web/doce-palavra/public/login.php
+URL: http://localhost/doce-palavra/public/login.php
 E-mail: admin@docepalavra.org
 Senha: Admin@123
 ```
