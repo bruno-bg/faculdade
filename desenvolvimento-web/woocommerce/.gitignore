@@ -25,6 +25,9 @@ wp-config.php
 
 # Example plugin
 /wp-content/plugins/hello.php
+/wp-content/plugins/akismet/*.*
+/wp-content/plugins/akismet/
+/wp-content/plugins/akismet/_inc/*.*
 
 # Uploads
 /wp-content/uploads/
@@ -47,4 +50,3 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 
-/wp-content/plugins/akismet/*.*
