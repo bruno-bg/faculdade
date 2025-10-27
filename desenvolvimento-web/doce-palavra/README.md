@@ -1,6 +1,11 @@
 
 # 📚 Doce Palavra - Sistema de Gestão de Sessões de Leitura
 
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+<img src="./public/assets/img/screenshot1.png" alt="Preview do Sistema" width="49%">
+<img src="./public/assets/img/screenshot2.png" alt="Preview do Sistema" width="49%">
+</div>
+
 ## 🎓 Projeto Acadêmico
 **Disciplina:** Projeto de Extensão II  
 **Instituição:** Faculdade Anhanguera  
@@ -111,7 +116,7 @@ O **Doce Palavra** é um sistema web desenvolvido especificamente para um grupo 
 ### **1. Preparação do Ambiente**
 ```bash
 # Clone ou baixe o projeto
-# Coloque em: C:\xampp\htdocs\Anhanguera\desenvolvimento-web\doce-palavra\
+# Coloque em: C:\xampp\htdocs\doce-palavra\
 ```
 
 ### **2. Configuração do Banco de Dados**
@@ -131,41 +136,9 @@ $password = '';
 
 ### **4. Acesso ao Sistema**
 ```
-URL: http://localhost/Anhanguera/desenvolvimento-web/doce-palavra/public/login.php
+URL: http://localhost/doce-palavra/public/login.php
 E-mail: admin@docepalavra.org
 Senha: Admin@123
-```
-
-## 📁 Estrutura do Projeto
-
-```
-doce-palavra/
-├── database/
-│   └── setup.sql              # Script de criação do banco
-├── public/                     # Páginas públicas
-│   ├── assets/
-│   │   ├── css/
-│   │   │   └── styles.css      # Estilos customizados
-│   │   └── js/
-│   │       └── app.js          # JavaScript global
-│   ├── creches.php            # Gestão de creches
-│   ├── livros.php             # Gestão de livros
-│   ├── sessoes.php            # Gestão de sessões
-│   ├── relatorios.php         # Relatórios e estatísticas
-│   ├── dashboard.php          # Página inicial
-│   └── login.php              # Autenticação
-├── src/
-│   ├── config/
-│   │   ├── config.php         # Configurações gerais
-│   │   └── db.php             # Conexão com banco
-│   ├── lib/
-│   │   ├── auth.php           # Funções de autenticação
-│   │   └── helpers.php        # Funções auxiliares
-│   └── views/
-│       └── partials/
-│           ├── header.php     # Cabeçalho comum
-│           └── footer.php     # Rodapé comum
-└── README.md                  # Este arquivo
 ```
 
 ## 🎯 Funcionalidades por Módulo
@@ -248,17 +221,14 @@ Este projeto foi desenvolvido como parte do **Projeto de Extensão II** da Facul
 - **Tecnologias modernas** com interface amigável
 - **Arquitetura robusta** com segurança de dados
 
-## 📞 Suporte e Contato
-
-Para dúvidas sobre o projeto ou contribuições:
-- **Instituição:** Faculdade Anhanguera
-- **Disciplina:** Projeto de Extensão II
-- **Foco:** Inclusão digital e incentivo à leitura
-
----
-
 ## 🏆 Conclusão
 
 O **Doce Palavra** representa uma solução completa e acessível para gestão de sessões de leitura, desenvolvida com foco no usuário final e na importância social do incentivo à leitura nas creches. O sistema demonstra como a tecnologia pode ser uma aliada na inclusão digital e no apoio ao trabalho voluntário.
 
-**Desenvolvido com ❤️ para o Projeto de Extensão II - Faculdade Anhanguera**
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bruno-bg/faculdade/tree/main/desenvolvimento-web/doce-palavra/LICENSE) para mais detalhes.
+
+## Autor
+
+Bruno Guimarães - [GitHub](https://github.com/bruno-bg)
