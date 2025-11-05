@@ -45,8 +45,10 @@ build
 # Editores e IDEs
 # =====================
 .vscode/*
+**/.vscode/
 !.vscode/extensions.json
 .cursor/
+**/.cursor/
 .idea/
 .DS_Store
 *.suo
